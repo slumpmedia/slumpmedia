@@ -1,0 +1,63 @@
+/* Grundläggande stil för PR-sidan */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #fdfdfd;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #6e45e2, #88d3ce);
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.image {
+    flex: 1 1 300px;
+    max-width: 300px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.image:hover {
+    transform: scale(1.05);
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image p {
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 40px;
+}
